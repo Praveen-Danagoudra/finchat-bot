@@ -3,8 +3,7 @@
     "build": "webpack --env.target=all --mode=production",
     "start": "webpack-dev-server --env.target=dev --mode=development",
     "test": "jest",
-    "heroku-prebuild": "npm install --dev",
-    "heroku-postbuild": "echo Skip build on Heroku"
+    "heroku-prebuild": "npm install --dev"
   },
   "jest": {
     "rootDir": "tests",
@@ -18,9 +17,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.6.2",
-    "@botonic/react": "~0.13.0"
-  },
-  "devDependencies": {
+    "@botonic/react": "~0.13.0",
     "@babel/core": "^7.6.2",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/plugin-transform-runtime": "^7.6.2",
@@ -53,6 +50,5 @@
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
-  },
-  "heroku-run-build-script": true
+  }
 }
