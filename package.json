@@ -9,8 +9,7 @@
     "build": "webpack --env.target=all --mode=production",
     "start": "webpack-dev-server --env.target=dev --mode=development",
     "test": "jest",
-    "heroku-prebuild": "npm install --dev",
-    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
+    "heroku-prebuild": "npm install --dev"
   },
   "jest": {
     "rootDir": "tests",
