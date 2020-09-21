@@ -3,6 +3,7 @@
     "build": "webpack --env.target=all --mode=production",
     "start": "webpack-dev-server --env.target=dev --mode=development",
     "test": "jest",
+    "heroku-prebuild": "npm install --dev",
     "heroku-postbuild": "echo Skip build on Heroku"
   },
   "jest": {
