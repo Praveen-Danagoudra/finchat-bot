@@ -10,7 +10,7 @@
     "start": "webpack-dev-server --env.target=dev --mode=development",
     "test": "jest",
     "heroku-prebuild": "npm install --dev",
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
+    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
   },
   "jest": {
     "rootDir": "tests",
