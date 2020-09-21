@@ -2,7 +2,8 @@
   "scripts": {
     "build": "webpack --env.target=all --mode=production",
     "start": "webpack-dev-server --env.target=dev --mode=development",
-    "test": "jest"
+    "test": "jest",
+    "heroku-postbuild": "echo Skip build on Heroku"
   },
   "jest": {
     "rootDir": "tests",
@@ -51,5 +52,6 @@
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
-  }
+  },
+  "heroku-run-build-script": true
 }
