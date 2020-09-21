@@ -1,9 +1,16 @@
 {
+  "name": "finchat-bot",
+  "version": "1.0.0",
+  "description": "A sample chat App.",
+  "engines": {
+    "node": "12.13.x"
+  },
   "scripts": {
     "build": "webpack --env.target=all --mode=production",
     "start": "webpack-dev-server --env.target=dev --mode=development",
     "test": "jest",
-    "heroku-prebuild": "npm install --dev"
+    "heroku-prebuild": "npm install --dev",
+    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
   },
   "jest": {
     "rootDir": "tests",
