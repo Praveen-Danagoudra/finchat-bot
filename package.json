@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "heroku-postbuild": "webpack --env.target=all --mode=production",
+    "build": "webpack --env.target=all --mode=production",
     "test": "jest",
     "heroku-prebuild": "npm install --dev"
   },
