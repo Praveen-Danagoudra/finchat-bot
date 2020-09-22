@@ -30,9 +30,10 @@ Checkout this GITHUB repo
 $> npm install -g @botonic/cli
 ```
 Install NPM dependencies 
----
+
+```
 $> npm install
----
+```
 
 ### Run your bot
 
